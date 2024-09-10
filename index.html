@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo-removebg-preview.png">
+    <!--font awesome for icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <section id="hero">
+        <!---- nav-->
+        <nav class="navigation">
+            <!--menu btn-->
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label>
+            <!--logo-->
+            <a href="about us.html" class="logo"><span>We</span>Care</a>
+            <!--menu-->
+            <ul class="menu">
+                <li><a href="#team">Find Doctor</a></li>
+                <li><a href="#our-services">Our Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+            <!--appointment btn-->
+            <a href="appointment.html" class="nav-appointment-btn">appointment</a>
+        </nav>
+        <!--content-->
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="text">
+                   <h1>Feel Better Abour Finding Healthcare</h1>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laborum dolorum, dolor nobis, sequi eius aperiam magnam perspiciatis aspernatur vero corrupti fugiat error vitae exercitationem odit commodi facere architecto ut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto laboriosam, deserunt expedita fugiat inventore modi?</p>
+                    <!--btns-->
+                   <div class="hero-text-btn">
+                      <a href="#team">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          Find Doctor
+                      </a>
+                      <a href="appointment.html">
+                          <i class="fa-solid fa-check"></i>
+                          Book appointment
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <!--img-->
+            <div class="hero-img">
+                <img src="images/d2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!----*What we provides*---->
+    <section class="what-we-provide" id="what-we-provide">
+        <!--box1-->
+        <a href="spescial service.html">
+            <div class="w-info-box w-info-box1">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-capsules"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>Specialised Services</strong>
+                <p>Lorem ipsum, dolor sit</p>
+            </div>
+        </div></a>
+        <!--box2-->
+        <a href="spescial service.html">
+            <div class="w-info-box w-info-box2">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-notes-medical"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>24/7 Advance Care</strong>
+                <p>Lorem ipsum, dolor sit</p>
+            </div>
+        </div></a>
+        <!--box3-->
+        <div class="w-info-box w-info-box3">
+            <!--icon-->
+            <div class="w-info-icon">
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+            </div>
+            <!--text-->
+            <div class="w-info-text">
+                <strong>Get Resut Online</strong>
+                <p>Lorem ipsum, dolor sit</p>
+            </div>
+        </div>
+    </section>
+    <!--our story-->
+    <section id="our-story">
+        <div class="our-story-img">
+            <img src="images/doctor with patient.jpg" alt="">
+        </div>
+        <div class="our-story-text">
+            <h2>Short Story About Our Clinic.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laborum dolorum, dolor nobis, sequi eius aperiam magnam perspiciatis aspernatur vero corrupti fugiat error vitae exercitationem odit commodi facere architecto ut?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestias, eos sapiente, asperiores culpa dicta libero illum et saepe eum quia architecto corrupti obcaecati eveniet fugiat voluptatibus minus alias vero?</p>
+            <!-----happy Clint-->
+            <div class="story-number-container">
+                <!-- box1 -->
+                 <a href="#testimonials"><div class="story-number-box s-n-box1">
+                    <strong>1000+</strong>
+                    <span>Happy patient</span>
+                 </div></a>
+                  <!-- box2 -->
+                  <a href="#team"><div class="story-number-box s-n-box2">
+                    <strong>180+</strong>
+                    <span>Expert Doctor's</span>
+                 </div></a>
+                  <!-- box 3-->
+                  <a href="rooms.html">
+                    <div class="story-number-box s-n-box3">
+                    <strong>240+</strong>
+                    <span>Hospital Room's</span>
+                 </div></a>
+                  <!-- box 4 -->
+                 <a href="achievement.html">
+                    <div class="story-number-box s-n-box4">
+                    <strong>120+</strong>
+                    <span>Achievement</span>
+                 </div></a> 
+            </div>
+        </div>
+    </section>
+
+    <!--- our survices ---->
+    <section id="our-services">
+        <div class="services-heading">
+            <!--text-->
+            <div class="services-heading-text">
+                <strong>Our survices</strong>
+                <h2>High Quality Services For You</h2>
+            </div>
+            <!--btns-->
+           <div class="services-slide-btn">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+           </div>
+        </div>
+        <!--box-container-->
+        <div class="services-box-container" id="service">
+            <!-- Swiper -->
+           <div class="swiper mySwiperservices">
+               <div class="swiper-wrapper">
+                <!--slide0-->
+                <div class="swiper-slide slide0">
+                    <!--box-->
+                    <div class="services-box s-box0">
+                        <!--icon-->
+                        <i class="fa-solid fa-truck-medical"></i>
+                        <!--title-->
+                        <strong>Ambulance</strong>
+                        <!--Details-->
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <!--button-->
+                        <a href="spescial service.html#ambulance-service">Read More</a>
+                    </div>
+                 </div>
+                    <!--silde 1-->
+                    <div class="swiper-slide slide1">
+                        <!--box-->
+                        <div class="services-box s-box1">
+                            <!--icon-->
+                            <i class="fa-solid fa-tooth"></i>
+                            <!--title-->
+                            <strong>Dental Care</strong>
+                            <!--Details-->
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <!--button-->
+                            <a href="spescial service.html#dental-service">Read More</a>
+                        </div>
+                    </div>
+                     <!--silde 2-->
+                     <div class="swiper-slide">
+                        <!--box-->
+                        <div class="services-box s-box2">
+                            <!--icon-->
+                            <i class="fa-solid fa-eye"></i>
+                            <!--title-->
+                            <strong>Eye Care</strong>
+                            <!--Details-->
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <!--button-->
+                            <a href="spescial service.html#eye-service">Read More</a>
+                        </div>
+                     </div>
+                      <!--silde 3-->
+                      <div class="swiper-slide">
+                        <!--box-->
+                        <div class="services-box s-box3">
+                            <!--icon-->
+                            <i class="fa-regular fa-face-smile"></i>
+                            <!--title-->
+                            <strong>Skin Care</strong>
+                            <!--Details-->
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <!--button-->
+                            <a href="spescial service.html#skin-service">Read More</a>
+                        </div>
+                     </div>
+                      <!--silde 4-->
+                    <div class="swiper-slide">
+                        <!--box-->
+                        <div class="services-box s-box4">
+                            <!--icon-->
+                            <i class="fa-solid fa-notes-medical"></i>
+                            <!--title-->
+                            <strong>Surgical</strong>
+                            <!--Details-->
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <!--button-->
+                            <a href="spescial service.html#sergury-service">Read More</a>
+                        </div>
+                    </div>
+                    <!--slide5-->
+                    <div class="swiper-slide">
+                        <!--box-->
+                        <div class="services-box s-box5">
+                            <!--icon-->
+                            <i class="fa-solid fa-hospital"></i>
+                            <!--title-->
+                            <strong>Emergncy Treatment</strong>
+                            <!--Details-->
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <!--button-->
+                            <a href="spescial service.html#emergency-service">Read More</a>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <!--box-->
+                        <div class="services-box s-box6">
+                            <!--icon-->
+                            <i class="fa-solid fa-baby"></i>
+                            <!--title-->
+                            <strong>Baby Delivery</strong>
+                            <!--Details-->
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <!--button-->
+                            <a href="spescial service.html#delivery-service">Read More</a>
+                        </div>
+                     </div>
+                     
+                </div>
+            </div>
+
+        </div>
+
+        <!--btn-->
+        <span class="service-help-btn">contect Us For Need Any Help And services <a href="#">Get Help</a></span>
+
+    </section>
+
+    <!---- why to choose us ---->
+    <section id="why-choose-us">
+        <!--left-->
+        <div class="why-choose-us-left">
+            <h3>Why choose Us?</h3>
+            <!--Container-->
+            <div class="why-choose-box-container">
+
+                <!--box-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>Advance Care</strong>
+                        <p>Lorem ipsum dolor sit, amet</p>
+                    </div>
+                </div>
+                
+                <!--box-->
+                <a href="spescial service.html">
+                    <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>24/7 Available</strong>
+                        <p>Lorem ipsum dolor sit, amet</p>
+                    </div>
+                </div></a>
+
+                <!--box-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>Spescialist Doctore's</strong>
+                        <p>Lorem ipsum dolor sit, amet</p>
+                    </div>
+                </div>
+
+                <!--box-->
+                <div class="why-choose-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-check"></i>
+                    <!--text-->
+                    <div class="why-choose-box-text">
+                        <strong>Doctore At home On Emergency</strong>
+                        <p>Lorem ipsum dolor sit, amet</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--btn-->
+            <a href="appointment.html" class="why-choose-us-btn">Make Appointment</a>
+        </div>
+        <!---Right-->
+        <div class="why-choose-us-right">
+            <h3>
+                Emergency?<br>
+                contect us
+            </h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, voluptas! Atque odio labore incidunt enim optio voluptas cupiditate earum fugiat totam sunt.</p>
+            <!--container-->
+            <div class="w-right-contact-container">
+                <!--box-->
+                <a href="tel:7987240879">
+                <div class="w-right-contact-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-phone"></i>
+                    <!--text-->
+                    <div class="w-right-contact-box-text">
+                        <span>Call Us Now</span>
+                        <strong>+917987240879</strong>
+                    </div>
+                </div>
+            </a>
+
+                 <!--box-->
+                 <a href="mailto:hemprakash.sahu@ssipmt.com">
+                 <div class="w-right-contact-box">
+                    <!--icon-->
+                    <i class="fa-solid fa-envelope"></i>
+                    <!--text-->
+                    <div class="w-right-contact-box-text">
+                        <span>Mail Us Now</span>
+                        <strong>hemprakash.sahu@ssipmt.com</strong>
+                    </div>
+                </div>
+            </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--team-->
+    <section id="team">
+        <!--heading-->
+        <div class="team-heading">
+            <h3>Meet our specialist</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat aliquam beatae quos. Magnam rerum labo</p>
+        </div>
+
+        <!-- Container-->
+         <div class="team-box-container">
+
+
+             <!-- Swiper -->
+            <div class="swiper mySwiperteam">
+                <div class="swiper-wrapper">
+
+                    <!--slide1-->
+                    <div class="swiper-slide">
+                        <!--box-->
+                        <a href="doctore1.html">
+                            <div class="team-box">
+                            <!--images-->
+                            <div class="team-img">
+                                <img src="images/doctor1.png" alt="">
+                            </div>
+                            <div class="team-text">
+                                <strong>Dr. NP Mishra</strong>
+                                <span>skin specialist</span>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+
+                     <!--slide2-->
+                     <div class="swiper-slide">
+                        <!--box-->
+                        <a href="doctore1.html">
+                            <div class="team-box">
+                            <!--images-->
+                            <div class="team-img">
+                                <img src="images/doctor2-removebg-preview.png" alt="">
+                            </div>
+                            <div class="team-text">
+                                <strong>Dr. Sushila Mehta</strong>
+                                <span>skin specialist</span>
+                            </div>
+                        </div></a>
+                    </div>
+
+                     <!--slide3-->
+                     <div class="swiper-slide">
+                        <!--box-->
+                        <a href="doctore1.html"><div class="team-box">
+                            <!--images-->
+                            <div class="team-img">
+                                <img src="images/doctor3.png" alt="">
+                            </div>
+                            <div class="team-text">
+                                <strong>Dr. Jitendra Singh</strong>
+                                <span>skin specialist</span>
+                            </div>
+                        </div></a>
+                    </div>
+
+                     <!--slide4-->
+                     <div class="swiper-slide">
+                        <!--box-->
+                        <a href="doctore1.html"><div class="team-box">
+                            <!--images-->
+                            <div class="team-img">
+                                <img src="images/doctor4.png" alt="">
+                            </div>
+                            <div class="team-text">
+                                <strong>Dr. Hemant Sahu </strong>
+                                <span>skin specialist</span>
+                            </div>
+                        </div></a>
+                    </div>
+
+                     <!--slide5-->
+                     <div class="swiper-slide">
+                        <!--box-->
+                        <a href="doctore1.html"><div class="team-box">
+                            <!--images-->
+                            <div class="team-img">
+                                <img src="images/doctor5-removebg-preview.png" alt="">
+                            </div>
+                            <div class="team-text">
+                                <strong>Dr. Khushi Sahu</strong>
+                                <span>skin specialist</span>
+                            </div>
+                        </div></a>
+                    </div>
+
+                     <!--slide6-->
+                     <div class="swiper-slide">
+                        <!--box-->
+                        <a href="doctore1.html"><div class="team-box">
+                            <!--images-->
+                            <div class="team-img">
+                                <img src="images/doctor6-removebg-preview.png" alt="">
+                            </div>
+                            <div class="team-text">
+                                <strong>Dr. Deepa Maheshwari</strong>
+                                <span>skin specialist</span>
+                            </div>
+                        </div></a>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+           </div>
+
+           
+
+         </div>
+    </section>
+    
+
+    <!--Testimonials-->
+    <section id="testimonials">
+        <!--heading-->
+        <div class="testimonials-heading">
+            <h3>Our Patients FeedBack About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates velit quidem ipsa mollitia quod voluptatibus officia quae impedit repudiandae, deserunt harum pariatur id quisquam labore facere magni deleniti explicabo.</p>
+        </div>
+
+        <!--testimonial content-->
+        <div class="testimonials-content">
+            <!--img-->
+            <div class="testimonials-img">
+                <img src="images/patient.jpg" alt="">
+            </div>
+
+            <!--container-->
+            <div class="testimonials-box-container">
+
+                <!-- Swiper -->
+                <div class="swiper mySwipertest">
+                <div class="swiper-wrapper">
+                
+                <!--slide1-->
+                <div class="swiper-slide">
+                <!--box-->
+                <div class="testimonials-box">
+                    <!--profile-->
+                    <div class="t-profile">
+                        <!--img-->
+                        <div class="t-profile-img">
+                            <img src="images/feedback.png" alt="">
+                        </div>
+                        <!--text-->
+                        <div class="t-profile-text">
+                            <strong>Client name</strong>
+                            <span>From Raipur</span>
+                            <div class="t-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--feedback-->
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, facilis alias numquam repellendus molestiae, earum corrupti tempore cumque, impedit voluptates laborum. Odit facilis omnis officia blanditiis non corporis consectetur asperiores?</p>
+
+                </div>
+                </div>
+
+                <!--slide1-->
+                <div class="swiper-slide">
+                    <!--box-->
+                    <div class="testimonials-box">
+                        <!--profile-->
+                        <div class="t-profile">
+                            <!--img-->
+                            <div class="t-profile-img">
+                                <img src="images/feedback.png" alt="">
+                            </div>
+                            <!--text-->
+                            <div class="t-profile-text">
+                                <strong>Client name</strong>
+                                <span>From Raipur</span>
+                                <div class="t-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--feedback-->
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, facilis alias numquam repellendus molestiae, earum corrupti tempore cumque, impedit voluptates laborum. Odit facilis omnis officia blanditiis non corporis consectetur asperiores?</p>
+    
+                    </div>
+                    </div>
+
+                    <!--slide1-->
+                <div class="swiper-slide">
+                    <!--box-->
+                    <div class="testimonials-box">
+                        <!--profile-->
+                        <div class="t-profile">
+                            <!--img-->
+                            <div class="t-profile-img">
+                                <img src="images/feedback.png" alt="">
+                            </div>
+                            <!--text-->
+                            <div class="t-profile-text">
+                                <strong>Client name</strong>
+                                <span>From Raipur</span>
+                                <div class="t-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--feedback-->
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, facilis alias numquam repellendus molestiae, earum corrupti tempore cumque, impedit voluptates laborum. Odit facilis omnis officia blanditiis non corporis consectetur asperiores?</p>
+    
+                    </div>
+                    </div>
+                   
+                </div>
+                <div class="swiper-pagination"></div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <!--subscribe-->
+    <section id="subscribe">
+        <h3>Subscribe For New Updates From WeCAre</h3>
+        <!--==subscribe-box===-->
+        <form action="" class="subscribe-box">
+            <input type="email" placeholder="Example@site.com">
+            <button>Subscribe</button>
+        </form>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-container">
+            
+            <!--company-box-->
+            <div class="footer-company-box">
+                <!--logo-->
+                <a href="#" class="logo"><span>We</span>Care</a>
+                <!--Details-->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet delectus eum sint nihil illo architecto recusandae veniam maiores,</p>
+                <!--social-box-->
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/hemprakash74/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.wa.me/+917987240879"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="+917987249879"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+            <!--link-->
+            <div class="footer-link-box">
+                <strong>Main Link's</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="appointment.html">book appointment</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-link-box">
+                <strong>Main Link's</strong>
+                <ul>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="achievement.html">Achievement</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="appointment.html">book appointment</a></li>
+                </ul>
+            </div>
+            <div class="footer-link-box">
+                <strong>Main Link's</strong>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="appointment.html">book appointment</a></li>
+                </ul>
+            </div>
+     
+        </div>
+
+        <div class="footer-bottom">
+            <span>made By Hemprakash</span>
+            <span>Copyright 2024 - Going To Internet</span>
+        </div>
+    </footer>
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    /----services silde----/
+    var swiper = new Swiper(".mySwiperservices", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+      },
+      breakpoints: {
+        700: {/*apply this before 700px and after 1024 px*/
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {/*apply this after 1024 px*/
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+
+    /==team==/
+    var swiper = new Swiper(".mySwiperteam", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        /*and after 560px width slide is 1*/
+        560: {/*after 950px*/
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        950: {/*after 1250px*/
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1250: {/*before 1250*/
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+
+    /* ==testimonials==*/
+    var swiper = new Swiper(".mySwipertest", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+</html>

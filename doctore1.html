@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Doctor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #008CBA;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+        }
+
+        header p {
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .contact-details {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px; /* Fixed width to align content properly */
+            margin: 0 auto; 
+        }
+
+        .contact-details p {
+            margin: 5px 0;
+        }
+
+        .container2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience, .reviews {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .experience h3, .reviews h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsiveness */
+        @media(max-width: 1000px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .container2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media(max-width: 600px) {
+            header {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .container, .container2 {
+                padding: 10px;
+                box-shadow: none;
+            }
+
+            .contact-details {
+                max-width: 100%;
+                padding: 10px;
+            }
+
+            .profile-image {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            footer {
+                padding: 5px 0;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="name">Dr. NP Mishra</h1>
+    <p class="field">Skin Specialist</p>
+</header>
+
+<div class="container">
+    <div class="first">
+        <img src="images/doctor1.png" alt="Doctor's Profile Picture" class="profile-image">
+        <h3>Dr. NP Mishra</h3>
+    </div>
+    <div class="second">
+        <h2 class="name">About Dr. NP Mishra</h2>
+        <p>
+            Dr. NP Mishra is a board-certified skin specialist with over 20 years of experience in dermatology. He is 
+            dedicated to providing the best care for his patients, offering advanced treatments and personalized care 
+            for various skin conditions.
+        </p>
+        <p>
+            Dr. Mishra completed his medical education at Harvard Medical School and further specialized in dermatology 
+            during his residency at the Mayo Clinic. He is highly experienced in treating a range of skin conditions 
+            including acne, eczema, and psoriasis. Dr. Mishra is committed to staying current with the latest advancements in skin care and treatment, ensuring 
+            his patients receive the most effective and up-to-date care possible. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque optio sapiente voluptates vel nesciunt. Adipisci ratione aspernatur, possimus ab eaque laudantium et saepe labore. Molestias ex inventore enim porro magnam. 
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque possimus necessitatibus repellendus culpa officiis laudantium esse earum? Optio beatae, maxime, perferendis sunt odit, totam dolor id laboriosam ullam ratione voluptate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque rem deleniti nemo, ipsum voluptates praesentium error voluptatum repellendus accusamus accusantium.</p>
+    </div>
+</div>
+
+<div class="container2">
+    <div class="experience">
+        <h3>Experience</h3>
+        <p>With over 20 years in dermatology, Dr. NP Mishra has treated thousands of patients with a wide variety of skin conditions. His areas of expertise include:</p>
+        <ul>
+            <li>Treatment of chronic skin conditions like eczema and psoriasis</li>
+            <li>Advanced acne treatment techniques</li>
+            <li>Cosmetic dermatology including anti-aging treatments</li>
+            <li>Skin cancer detection and treatment</li>
+        </ul>
+        <p>Dr. Mishra has also participated in numerous clinical trials and has published several papers in top medical journals.</p>
+    </div>
+
+    <div class="reviews">
+        <h3>Customer Reviews</h3>
+        <p><strong>John Smith:</strong> "Dr. Mishra is an outstanding dermatologist! He really listens to his patients and offers personalized treatment plans. My skin has never looked better."</p>
+        <p><strong>Jane Doe:</strong> "I had a great experience with Dr. Mishra. He was thorough, professional, and made sure I was comfortable throughout the treatment. Highly recommend!"</p>
+        <p><strong>Michael Johnson:</strong> "Dr. Mishra is simply the best! I've struggled with eczema for years, and his treatment plan has been life-changing."</p>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<div class="details">
+    <div class="contact-details">
+        <h3>Medical Career</h3>
+        <p><strong>Patients:</strong> 2000+</p>
+        <p><strong>Baby Deliveries:</strong> 50+</p>
+        <p><strong>Surgeries:</strong> 100+</p>
+        <p><strong>Professional In:</strong> Heart Problem, Bone, Eye Care, Dental</p>
+    </div>
+    <div class="contact-details">
+        <h3>Contact Details</h3>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> npmishra@example.com</p>
+        <p><strong>Office Address:</strong> 123 Skin Care Blvd, Dermatology City, 45678</p>
+        <p><strong>Office Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Dr. NP Mishra. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hospital Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #008080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section {
+            margin-bottom: 40px;
+        }
+
+        .about-section h2 {
+            color: #008080;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .team-section {
+            margin-bottom: 40px;
+        }
+
+        .team-section h2 {
+            color: #008080;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #008080;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #008080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .team-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .about-section h2, .team-section h2 {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 767px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .about-section h2, .team-section h2 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Us</h1>
+</header>
+
+<div class="container">
+    <section class="about-section">
+        <h2>Who We Are</h2>
+        <p>Welcome to our hospital management system. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi corporis quam et, nihil sed ex illo. Optio harum itaque, eligendi ipsum dolor exercitationem quis saepe rem ipsa nisi quisquam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laudantium quam saepe officiis ut. Illo ducimus modi ratione minima sint? Earum mollitia sit quos, debitis velit voluptate ea libero et.</p><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit eius quas, iste autem, voluptates nulla aperiam consequuntur in rem consequatur sapiente vero ad mollitia minima qui ex fugiat cumque.</p>
+    </section>
+
+    <section class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/ceo.jpg" alt="CEO">
+                <h3>Dr. Ravindra Singh</h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="images/cheif medician doct.jfif" alt="Chief Medical Officer">
+                <h3>Dr. Sandeep Mehta</h3>
+                <p>Chief Medical Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="images/chief administrator doct.jpg" alt="Chief Administrator">
+                <h3>Dr. Radhika Sahu</h3>
+                <p>Chief Administrator</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

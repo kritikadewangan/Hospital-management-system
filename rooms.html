@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Room Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(144, 146, 146);
+            color: white;
+            padding: 25px 0;
+            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 1300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .content-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-img img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .content-text h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content-text p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        @media (min-width: 768px) {
+            .content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .caption {
+            margin-top: 10px;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: fit-content;
+            font-weight: bold;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            z-index: 100;
+            transform: translateY(-50%);
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        button{
+            padding: 10px 60px;
+            background-color: rgb(38, 0, 255);
+            color: white;
+            margin: auto auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+        button:hover{
+            background-color: rgb(3, 141, 253);
+            color: rgb(244, 243, 248);
+            box-shadow: 8px 8px 13px gray;
+        }
+    </style>
+</head>
+<body>
+    <h3>1000+ Rooms For Patients</h3>
+    <div class="content">
+        <div class="content-img">
+            <img src="images/hospital room.png" alt="Hospital Room">
+        </div>
+        <div class="content-text">
+            <h1>Hospital Room With All Facilities</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nulla sint molestias iste quia accusamus ex libero!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sequi libero inventore deserunt quae hic, aperiam quis nulla deleniti corrupti.</p>
+            <a href="images/all rooms.pdf"><button>See Rooms</button></a>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="images/hospital delux room.jfif" alt="Room 1">
+                <div class="caption">Deluxe Room</div>
+            </div>
+            <div class="slide">
+                <img src="images/hospital-Single-room.jpg" alt="Room 2">
+                <div class="caption">Single Room</div>
+            </div>
+            <div class="slide">
+                <img src="images/hospital double room.jfif" alt="Room 3">
+                <div class="caption">Double Room</div>
+            </div>
+            <div class="slide">
+                <img src="images/icu room.jpg" alt="Room 4">
+                <div class="caption">ICU Room</div>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        function changeSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            currentIndex += direction;
+
+            if (currentIndex >= slides.length) {
+                currentIndex = 0;
+            } else if (currentIndex < 0) {
+                currentIndex = slides.length - 1;
+            }
+
+            document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        }
+    </script>
+</body>
+</html>
